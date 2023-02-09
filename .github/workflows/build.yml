@@ -1,0 +1,23 @@
+name: "Build elm-nanoid-non-secure"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: "Build"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+      - name: Setup elm-test
+        run: "npm install -g elm elm-test"
+      - name: Run elm-test
+        run: "elm-test"

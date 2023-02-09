@@ -3,7 +3,7 @@
     "name": "mather/elm-nanoid-non-secure",
     "summary": "Generate random nanoid (non-secure version)",
     "license": "MIT",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "source-directories": [
         "src"
     ],

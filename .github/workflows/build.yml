@@ -7,17 +7,17 @@ on:
   pull_request:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-    name: "Build"
+    name: "Test"
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: latest
       - name: Setup elm-test
-        run: "npm install -g elm elm-test"
+        run: "npm install -g elm@latest-0.19.1 elm-test@latest-0.19.1"
       - name: Run elm-test
         run: "elm-test"

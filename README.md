@@ -1,5 +1,7 @@
 # nanoid generator for Elm
 
+[![Test](https://github.com/mather/elm-nanoid-non-secure/actions/workflows/build.yml/badge.svg)](https://github.com/mather/elm-nanoid-non-secure/actions/workflows/build.yml)
+
 This package provides [nanoid (non-secure ver.)](https://github.com/ai/nanoid#non-secure) over [elm/random](https://package.elm-lang.org/packages/elm/random/latest/).
 
 If you are concerned about security, please refer to [ai/nanoid#Security](https://github.com/ai/nanoid#security).
